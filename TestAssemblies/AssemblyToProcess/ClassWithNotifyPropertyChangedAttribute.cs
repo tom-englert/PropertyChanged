@@ -1,12 +1,12 @@
 ﻿using PropertyChanged;
 
-[AddINotifyPropertyChangedInterfaceAttribute]
+[ImplementPropertyChangedAttribute]
 public class ClassWithNotifyPropertyChangedAttribute
 {
     public string Property1 { get; set; }
 }
 
-[AddINotifyPropertyChangedInterfaceAttribute]
+[ImplementPropertyChangedAttribute]
 public class ClassWithNotifyPropertyChangedAttributeGeneric<T>
 {
     public string Property1 { get; set; }

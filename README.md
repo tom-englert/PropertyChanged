@@ -1,13 +1,22 @@
-[![Chat on Gitter](https://img.shields.io/gitter/room/fody/fody.svg?style=flat)](https://gitter.im/Fody/Fody)
-[![NuGet Status](http://img.shields.io/nuget/v/PropertyChanged.Fody.svg?style=flat)](https://www.nuget.org/packages/PropertyChanged.Fody/)
+### This is a spin off from [Fody/PropertyChanged](https://github.com/Fody/PropertyChanged)
 
-![Icon](https://raw.github.com/Fody/PropertyChanged/master/Icons/package_icon.png)
+**Differences:**
+- Supports .Net4.0 projects
+- Uses `[ImplementPropertyChanged]` instead of `[AddINotifyPropertyChangedInterface]` to be compatible with older (1.5) releases
+
+
+---
+
+[![Chat on Gitter](https://img.shields.io/gitter/room/fody/fody.svg?style=flat)](https://gitter.im/Fody/Fody)
+[![NuGet Status](http://img.shields.io/nuget/v/PropertyChanged2.Fody.svg?style=flat)](https://www.nuget.org/packages/PropertyChanged2.Fody/)
+
+![Icon](https://raw.github.com/tom-englert/PropertyChanged.Fody/master/Icons/package_icon.png)
 
 Injects code which raises the [`PropertyChanged` event](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.propertychanged(v=vs.110).aspx), into property setters of classes which implement [INotifyPropertyChanged](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged(v=vs.110).aspx).
 
-This is an add-in for [Fody](https://github.com/Fody/Fody/); it is available via [NuGet](https://nuget.org/packages/PropertyChanged.Fody/):
+This is an add-in for [Fody](https://github.com/Fody/Fody/); it is available via [NuGet](https://nuget.org/packages/PropertyChanged2.Fody/):
 
-    PM> Install-Package PropertyChanged.Fody
+    PM> Install-Package PropertyChanged2.Fody
 
 ---
 

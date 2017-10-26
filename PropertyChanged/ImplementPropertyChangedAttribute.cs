@@ -1,11 +1,15 @@
 ﻿#pragma warning disable 1591
 using System;
+using System.ComponentModel;
 
 namespace PropertyChanged
 {
-    [Obsolete(
-        message: "This configuration option has been deprecated. The use of this attribute was to add INotifyPropertyChanged to a class with its associated event definition. After that all classes that implement INotifyPropertyChanged have their properties weaved, weather they have the ImplementPropertyChangedAttribute or not. This attribute was often incorrectly interpreted as an opt in approach to having properties weaved, which was never the intent nor how it ever operated. This attribute has been replaced by AddINotifyPropertyChangedInterfaceAttribute.",
-        error: true)]
+    /// <summary>
+    /// Specifies that the class will be marked with <see cref="INotifyPropertyChanged"/>.
+    /// Note that all classes that implement <see cref="INotifyPropertyChanged"/> will have property notification
+    /// injected irrespective of the use of this attribute.
+    /// Raising an issue about "this attribute does not behave as expected" will result in a RTFM and the issue being closed.
+    /// </summary>
     public class ImplementPropertyChangedAttribute : Attribute
     {
     }

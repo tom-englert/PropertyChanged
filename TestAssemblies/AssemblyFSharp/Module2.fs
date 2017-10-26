@@ -6,7 +6,7 @@ type XYZ() =
     member val Xyz = 1 with get,set
     member val Z = new System.Collections.Generic.List<I1>() with get
 
-[<PropertyChanged.AddINotifyPropertyChangedInterfaceAttribute>]
+[<PropertyChanged.ImplementPropertyChangedAttribute>]
 type Test() =
     let i1 = {new I1 with member i.X () = 33}
     [<DefaultValue>]

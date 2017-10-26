@@ -1,13 +1,14 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.8">
+    <id>PropertyChanged2.Fody</id>
     <version>$version$</version>
     <developmentDependency>true</developmentDependency>
-    <description>Add property notification to all classes that implement INotifyPropertyChanged</description>
+    <description>Add property notification to all classes that implement INotifyPropertyChanged. A spin of from PropertyChanged.Fody to support .Net4.0 projects and ensure backward compatibility with older versions.</description>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
-    <projectUrl>http://github.com/Fody/PropertyChanged</projectUrl>
+    <projectUrl>https://github.com/tom-englert/PropertyChanged.Fody</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/Fody/PropertyChanged/master/Icons/package_icon.png</iconUrl>
+    <iconUrl>https://raw.github.com/tom-englert/PropertyChanged.Fody/master/Icons/package_icon.png</iconUrl>
     <tags>Xaml, MVVM, INotifyPropertyChanged, DataBinding, ILWeaving, Cecil</tags>
     <dependencies>
       <dependency id="Fody" version="[2.0.0, 3.0.0)"/>
