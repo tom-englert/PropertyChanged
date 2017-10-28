@@ -4,11 +4,6 @@
 - Supports .Net4.0 projects
 - Uses `[ImplementPropertyChanged]` instead of `[AddINotifyPropertyChangedInterface]` to be compatible with older (1.5) releases
 
-**Known issues:**
-- The entry in the FodyWeavers.xml after installation is PropertyChanged2, but the weaver name is PropertyChanged
-    - Workaround: rename PropertyChanged2 to PropertyChanged in all FodyWeavers.xml files.
-
-
 ---
 
 [![Chat on Gitter](https://img.shields.io/gitter/room/fody/fody.svg?style=flat)](https://gitter.im/Fody/Fody)
