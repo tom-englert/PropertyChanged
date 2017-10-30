@@ -11,8 +11,7 @@ public static class Verifier
 
     static Verifier()
     {
-        var sdkPath = Path.GetFullPath(Path.Combine(ToolLocationHelper.GetPathToDotNetFrameworkSdk(TargetDotNetFrameworkVersion.VersionLatest), "..\\.."));
-        exePath = Directory.GetFiles(sdkPath, "peverify.exe", SearchOption.AllDirectories).LastOrDefault();
+        exePath = SdkToolsHelper.GetSdkToolPath("PeVerify.exe");
 
         peverifyFound = File.Exists(exePath);
         if (!peverifyFound)
