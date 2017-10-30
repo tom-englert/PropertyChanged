@@ -6,7 +6,7 @@ public class TestAssemblyResolver : DefaultAssemblyResolver
 {
     public TestAssemblyResolver()
     {
-        var fullPath = Path.GetFullPath(Path.Combine(TestContext.CurrentContext.TestDirectory, @"..\..\..\..\TestAssemblyBin\net462"));
+        var fullPath = Path.GetFullPath(Path.Combine(TestContext.CurrentContext.TestDirectory, @"..\..\..\..\TestAssemblyBin\net452"));
         AddSearchDirectory(fullPath);
     }
 }

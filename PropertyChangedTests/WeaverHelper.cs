@@ -11,7 +11,7 @@ public class WeaverHelper
 
     public WeaverHelper(string assemblyName)
     {
-        BeforeAssemblyPath = Path.GetFullPath(Path.Combine(TestContext.CurrentContext.TestDirectory, @"..\..\..\..\TestAssemblyBin\net462", assemblyName+".dll"));
+        BeforeAssemblyPath = Path.GetFullPath(Path.Combine(TestContext.CurrentContext.TestDirectory, @"..\..\..\..\TestAssemblyBin\net452", assemblyName+".dll"));
 
 #if (RELEASE)
         BeforeAssemblyPath = BeforeAssemblyPath.Replace("Debug", "Release");

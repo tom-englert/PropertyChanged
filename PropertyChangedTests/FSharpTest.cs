@@ -1,5 +1,5 @@
 
-#if(DEBUG)
+#if(_DEBUG)
 using NUnit.Framework;
 
 [TestFixture]
