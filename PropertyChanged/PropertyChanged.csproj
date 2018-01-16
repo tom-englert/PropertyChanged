@@ -10,6 +10,7 @@
     <DebugType>none</DebugType>
     <DebugSymbols>False</DebugSymbols>
     <Optimize>True</Optimize>
+    <AssemblyName>PropertyChanged2</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\CommonAssemblyInfo.cs">

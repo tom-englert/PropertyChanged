@@ -89,6 +89,6 @@ UnlockWeaversXml($project)
 
 RemoveForceProjectLevelHack $project
 
-Update-FodyConfig $package.Id.Replace("2.Fody", "") $project
+Update-FodyConfig $package.Id.Replace(".Fody", "") $project
 
 Fix-ReferencesCopyLocal $package $project

@@ -12,16 +12,16 @@
     </ItemGroup>
     <Delete Files="@(FilesToDelete)" />
     <MakeDir Directories="$(SolutionDir)NuGetBuild" />
-    <Copy SourceFiles="$(SolutionDir)PropertyChanged\bin\$(Configuration)\netstandard1.0\PropertyChanged.dll" DestinationFolder="$(SolutionDir)NuGetBuild\lib\netstandard1.0" />
-    <Copy SourceFiles="$(SolutionDir)PropertyChanged\bin\$(Configuration)\netstandard1.0\PropertyChanged.xml" DestinationFolder="$(SolutionDir)NuGetBuild\lib\netstandard1.0" />
-    <Copy SourceFiles="$(SolutionDir)PropertyChanged\bin\$(Configuration)\v4.0\Profile328\PropertyChanged.dll" DestinationFolder="$(SolutionDir)NuGetBuild\lib\portable-net40+sl50+win+wpa81+wp80" />
-    <Copy SourceFiles="$(SolutionDir)PropertyChanged\bin\$(Configuration)\v4.0\Profile328\PropertyChanged.xml" DestinationFolder="$(SolutionDir)NuGetBuild\lib\portable-net40+sl50+win+wpa81+wp80" />
-    <Copy SourceFiles="$(SolutionDir)NuGet\PropertyChanged.Fody.nuspec" DestinationFolder="$(SolutionDir)NuGetBuild" />
+    <Copy SourceFiles="$(SolutionDir)PropertyChanged\bin\$(Configuration)\netstandard1.0\PropertyChanged2.dll" DestinationFolder="$(SolutionDir)NuGetBuild\lib\netstandard1.0" />
+    <Copy SourceFiles="$(SolutionDir)PropertyChanged\bin\$(Configuration)\netstandard1.0\PropertyChanged2.xml" DestinationFolder="$(SolutionDir)NuGetBuild\lib\netstandard1.0" />
+    <Copy SourceFiles="$(SolutionDir)PropertyChanged\bin\$(Configuration)\v4.0\Profile328\PropertyChanged2.dll" DestinationFolder="$(SolutionDir)NuGetBuild\lib\portable-net40+sl50+win+wpa81+wp80" />
+    <Copy SourceFiles="$(SolutionDir)PropertyChanged\bin\$(Configuration)\v4.0\Profile328\PropertyChanged2.xml" DestinationFolder="$(SolutionDir)NuGetBuild\lib\portable-net40+sl50+win+wpa81+wp80" />
+    <Copy SourceFiles="$(SolutionDir)NuGet\PropertyChanged2.Fody.nuspec" DestinationFolder="$(SolutionDir)NuGetBuild" />
     <Copy SourceFiles="$(ProjectDir)install.ps" DestinationFiles="$(SolutionDir)NuGetBuild\tools\install.ps1" />
     <Copy SourceFiles="$(ProjectDir)uninstall.ps" DestinationFiles="$(SolutionDir)NuGetBuild\tools\uninstall.ps1" />
-    <Copy SourceFiles="$(SolutionDir)PropertyChanged.Fody\bin\$(Configuration)\net452\PropertyChanged.Fody.dll" DestinationFolder="$(SolutionDir)NuGetBuild" />
-    <Copy SourceFiles="$(SolutionDir)PropertyChanged.Fody\bin\$(Configuration)\net452\PropertyChanged.Fody.pdb" DestinationFolder="$(SolutionDir)NuGetBuild" />
-    <PepitaPackage.CreatePackageTask NuGetBuildDirectory="$(SolutionDir)NuGetBuild" MetadataAssembly="$(SolutionDir)PropertyChanged.Fody\bin\$(Configuration)\net452\PropertyChanged.Fody.dll" />
+    <Copy SourceFiles="$(SolutionDir)PropertyChanged.Fody\bin\$(Configuration)\net452\PropertyChanged2.Fody.dll" DestinationFolder="$(SolutionDir)NuGetBuild" />
+    <Copy SourceFiles="$(SolutionDir)PropertyChanged.Fody\bin\$(Configuration)\net452\PropertyChanged2.Fody.pdb" DestinationFolder="$(SolutionDir)NuGetBuild" />
+    <PepitaPackage.CreatePackageTask NuGetBuildDirectory="$(SolutionDir)NuGetBuild" MetadataAssembly="$(SolutionDir)PropertyChanged.Fody\bin\$(Configuration)\net452\PropertyChanged2.Fody.dll" />
   </Target>
   <ItemGroup>
     <ProjectReference Include="..\PropertyChanged.Fody\PropertyChanged.Fody.csproj" />
