@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Mono.Cecil;
 
@@ -89,13 +90,21 @@ public partial class ModuleWeaver
 
     MethodReference GetStaticEquality(TypeReference typeReference)
     {
-        var typeDefinition = Resolve(typeReference);
-        if (typeDefinition.IsInterface)
+        try
         {
+            var typeDefinition = Resolve(typeReference);
+            if (typeDefinition.IsInterface)
+            {
+                return null;
+            }
+
+            return FindNamedMethod(typeReference);
+        }
+        catch (Exception ex)
+        {
+            LogWarning($"Ignore static equality of type {typeReference.FullName} => {ex.Message}");
             return null;
         }
-
-        return FindNamedMethod(typeReference);
     }
 
     public static MethodReference FindNamedMethod(TypeReference typeReference)

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Mono.Cecil;
@@ -21,7 +22,15 @@ public partial class ModuleWeaver
         }
         else
         {
-            typeDefinition = Resolve(typeReference);
+            try
+            {
+                typeDefinition = Resolve(typeReference);
+            }
+            catch (Exception ex)
+            {
+                LogWarning($"Ignore type {fullName} => {ex.Message}");
+                return false;
+            }
         }
 
         if (HasPropertyChangedEvent(typeDefinition))
