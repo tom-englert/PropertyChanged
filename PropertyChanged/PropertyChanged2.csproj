@@ -5,13 +5,14 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
-    <Authors>Simon Cropp</Authors>
+    <Authors>Tom Englert, Simon Cropp</Authors>
     <Description>Add property notification to all classes that implement INotifyPropertyChanged.</Description>
     <PackageTags>Xaml, MVVM, INotifyPropertyChanged, DataBinding, ILWeaving, Cecil</PackageTags>
     <PackageOutputPath>$(SolutionDir)nugets</PackageOutputPath>
     <PackageIconUrl>https://raw.githubusercontent.com/Fody/PropertyChanged/master/package_icon.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/Fody/PropertyChanged</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <WeaverDirPath>..\PropertyChanged.Fody\bin\$(Configuration)\</WeaverDirPath>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Fody" Version="6.0.0" PrivateAssets="none" />

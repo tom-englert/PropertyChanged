@@ -5,6 +5,6 @@
     <DisableFody>true</DisableFody>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\PropertyChanged\PropertyChanged.csproj" />
+    <ProjectReference Include="..\..\PropertyChanged\PropertyChanged2.csproj" />
   </ItemGroup>
 </Project>

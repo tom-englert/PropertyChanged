@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using PropertyChanged;
 
-[AddINotifyPropertyChangedInterface]
+[ImplementPropertyChanged]
 public class ClassWithAttributeAndEvent
 {
     // ReSharper disable once EventNeverSubscribedTo.Global

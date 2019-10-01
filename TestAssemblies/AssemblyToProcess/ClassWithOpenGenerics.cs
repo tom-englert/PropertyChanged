@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using PropertyChanged;
 
-[AddINotifyPropertyChangedInterface]
+[ImplementPropertyChanged]
 public class ClassWithOpenGenerics<T>
 {
     public KeyValuePair<string, T> Property1 { get; set; }

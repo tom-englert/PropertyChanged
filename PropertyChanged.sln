@@ -6,7 +6,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestAssemblies", "TestAssem
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssemblyToProcess", "TestAssemblies\AssemblyToProcess\AssemblyToProcess.csproj", "{7DEC4E2D-F872-434E-A267-0BAD65299950}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyChanged.Fody", "PropertyChanged.Fody\PropertyChanged.Fody.csproj", "{C3578A7B-09A6-4444-9383-0DEAFA4958BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyChanged2.Fody", "PropertyChanged.Fody\PropertyChanged2.Fody.csproj", "{C3578A7B-09A6-4444-9383-0DEAFA4958BD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{5A86453B-96FB-4B6E-A283-225BB9F753D3}"
 EndProject
@@ -26,7 +26,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssemblyWithBlockingClass",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssemblyWithStackOverflow", "TestAssemblies\AssemblyWithStackOverflow\AssemblyWithStackOverflow.csproj", "{A3BC44F0-27B3-4498-8DA3-337ABC41B441}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyChanged", "PropertyChanged\PropertyChanged.csproj", "{40235741-D750-45B1-8DC5-49576025ABA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyChanged2", "PropertyChanged\PropertyChanged2.csproj", "{40235741-D750-45B1-8DC5-49576025ABA9}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C3578A7B-09A6-4444-9383-0DEAFA4958BD} = {C3578A7B-09A6-4444-9383-0DEAFA4958BD}
 	EndProjectSection

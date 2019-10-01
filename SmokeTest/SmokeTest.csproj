@@ -12,11 +12,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PropertyChanged\PropertyChanged.csproj" />
+    <ProjectReference Include="..\PropertyChanged\PropertyChanged2.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <WeaverFiles Include="$(SolutionDir)$(SolutionName).Fody\bin\$(Configuration)\netstandard2.0\$(SolutionName).Fody.dll" />
+    <WeaverFiles Include="$(SolutionDir)$(SolutionName).Fody\bin\$(Configuration)\netstandard2.0\$(SolutionName)2.Fody.dll" />
   </ItemGroup>
 
 </Project>

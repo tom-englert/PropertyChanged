@@ -1,3 +1,11 @@
+### This is a spin off from [Fody/PropertyChanged](https://github.com/Fody/PropertyChanged)
+
+**Differences:**
+- Supports .Net4.0 projects
+- Uses `[ImplementPropertyChanged]` instead of `[AddINotifyPropertyChangedInterface]` to be compatible with older (1.5) releases
+
+---
+
 [![Chat on Gitter](https://img.shields.io/gitter/room/fody/fody.svg?style=flat&max-age=86400)](https://gitter.im/Fody/Fody)
 [![NuGet Status](https://img.shields.io/nuget/v/PropertyChanged.Fody.svg?style=flat&max-age=86400)](https://www.nuget.org/packages/PropertyChanged.Fody/)
 
@@ -15,11 +23,11 @@ See also [Fody usage](https://github.com/Fody/Home/blob/master/pages/usage.md).
 
 ### NuGet installation
 
-Install the [PropertyChanged.Fody NuGet package](https://nuget.org/packages/PropertyChanged.Fody/) and update the [Fody NuGet package](https://nuget.org/packages/Fody/):
+Install the [PropertyChanged2.Fody NuGet package](https://nuget.org/packages/PropertyChanged2.Fody/) and update the [Fody NuGet package](https://nuget.org/packages/Fody/):
 
 ```powershell
 PM> Install-Package Fody
-PM> Install-Package PropertyChanged.Fody
+PM> Install-Package PropertyChanged2.Fody
 ```
 
 The `Install-Package Fody` is required since NuGet always defaults to the oldest, and most buggy, version of any dependency.
@@ -27,11 +35,11 @@ The `Install-Package Fody` is required since NuGet always defaults to the oldest
 
 ### Add to FodyWeavers.xml
 
-Add `<PropertyChanged/>` to [FodyWeavers.xml](https://github.com/Fody/Home/blob/master/pages/usage.md#add-fodyweaversxml)
+Add `<PropertyChanged2/>` to [FodyWeavers.xml](https://github.com/Fody/Home/blob/master/pages/usage.md#add-fodyweaversxml)
 
 ```xml
 <Weavers>
-  <PropertyChanged/>
+  <PropertyChanged2/>
 </Weavers>
 ```
 

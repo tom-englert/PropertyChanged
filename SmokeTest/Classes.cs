@@ -13,7 +13,7 @@
         public event PropertyChangedEventHandler PropertyChanged;
     }
 
-    [AddINotifyPropertyChangedInterface]
+    [ImplementPropertyChanged]
     public class Class2
     {
         public int Property1 { get; set; }
